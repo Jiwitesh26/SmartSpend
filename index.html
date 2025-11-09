@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSpend — Automatic UPI Expense Tracker | Budgets, Nudges & Savings</title>
+    <meta name="description" content="Automatically track UPI & SMS transactions, set budgets, and get smart nudges before you overspend. Free + Premium in India.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">SmartSpend</a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#demo" class="nav-link">Demo</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#modal" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content animate-slide-up">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">SmartSpend</span> — Effortless UPI expense tracking that helps you save
+                    </h1>
+                    <p class="hero-subtitle">
+                        Auto-categorize UPI & SMS transactions, build budgets, and get timely nudges — no manual entry.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#pricing" class="btn btn-primary btn-lg">
+                            Get started — it's free
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#demo" class="btn btn-outline btn-lg">See demo</a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C48C" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>50k+ downloads</span>
+                        </div>
+                        <div class="trust-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C48C" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Trusted by students & professionals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image animate-float">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="dashboard-preview">
+                                <h3>₹810.80.00</h3>
+                                <p>Total Spent / October</p>
+                                <div class="chart-placeholder"></div>
+                                <div class="transaction-item">
+                                    <span class="category-dot" style="background: #FF6B6B;"></span>
+                                    <span>Omsun Domicile</span>
+                                    <span class="amount">₹2,299</span>
+                                </div>
+                                <div class="transaction-item">
+                                    <span class="category-dot" style="background: #FFB800;"></span>
+                                    <span>Dominante</span>
+                                    <span class="amount">₹3,349</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-success">₹3,420 saved this month!</div>
+                    <div class="floating-badge badge-alert">
+                        <p>Budget Alert</p>
+                        <strong>80% food budget used</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How it works</h2>
+                <p class="section-subtitle">Get started in 3 simple steps</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon icon-primary">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Connect UPI / Allow SMS</h3>
+                    <p>Securely link your UPI apps or enable SMS parsing to automatically import transactions.</p>
+                    <a href="#" class="link-primary">Learn more →</a>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon icon-secondary">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Auto-categorize transactions</h3>
+                    <p>SmartSpend intelligently sorts your expenses into food, travel, shopping, and more.</p>
+                    <a href="#" class="link-primary">Learn more →</a>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon icon-success">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <h3>Set budgets & get nudges</h3>
+                    <p>Create spending limits and receive smart alerts before you overspend.</p>
+                    <a href="#" class="link-primary">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful features for smart spending</h2>
+                <p class="section-subtitle">Everything you need to take control of your finances</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon icon-primary">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3>Automatic tracking</h3>
+                    <p>Capture every UPI and SMS transaction automatically — zero manual entry required.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-primary">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Categorization</h3>
+                    <p>AI-powered sorting into Food, Travel, Shopping, Housing, and custom categories.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-primary">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>Budgets & Alerts</h3>
+                    <p>Set spending limits and get real-time alerts when you're close to your budget.</p>
+                    <div class="feature-nudge">
+                        <p>💡 Example nudge:</p>
+                        <p>"Shopping: 80% of budget used — slow down?"</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-primary">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M2 12h20"/>
+                        </svg>
+                    </div>
+                    <h3>Goal-based Savings</h3>
+                    <p>Set savings goals and track your progress toward reaching them.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-primary">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Privacy-first</h3>
+                    <p>Your data stays on your device. We never store UPI credentials or bank passwords.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-primary">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>Quick Insights & Forecasting</h3>
+                    <p>View spending trends, monthly reports, and forecast future expenses.</p>
+                    <div class="feature-nudge">
+                        <p>💡 Example nudge:</p>
+                        <p>"Travel spend +22% vs last month. Need to review?"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See SmartSpend in action</h2>
+                <p class="section-subtitle">Interactive demo with sample data</p>
+            </div>
+
+            <div class="demo-grid">
+                <div class="card demo-card">
+                    <h3>Recent transactions</h3>
+                    <div class="transactions-list">
+                        <div class="transaction-row">
+                            <div>
+                                <strong>Swiggy</strong>
+                                <span class="badge">Food</span>
+                                <p class="date">2025-10-03</p>
+                            </div>
+                            <span class="amount-secondary">₹420</span>
+                        </div>
+                        <div class="transaction-row">
+                            <div>
+                                <strong>Ola</strong>
+                                <span class="badge">Travel</span>
+                                <p class="date">2025-10-05</p>
+                            </div>
+                            <span class="amount-primary">₹180</span>
+                        </div>
+                        <div class="transaction-row">
+                            <div>
+                                <strong>Myntra</strong>
+                                <span class="badge">Shopping</span>
+                                <p class="date">2025-10-06</p>
+                            </div>
+                            <span class="amount-success">₹2,350</span>
+                        </div>
+                        <div class="transaction-row">
+                            <div>
+                                <strong>Rent</strong>
+                                <span class="badge">Housing</span>
+                                <p class="date">2025-10-09</p>
+                            </div>
+                            <span class="amount-destructive">₹12,000</span>
+                        </div>
+                        <div class="transaction-row">
+                            <div>
+                                <strong>PhonePe Transfer</strong>
+                                <span class="badge">Savings</span>
+                                <p class="date">2025-10-12</p>
+                            </div>
+                            <span class="amount-accent">₹3,000</span>
+                        </div>
+                        <div class="transaction-row">
+                            <div>
+                                <strong>Café Coffee Day</strong>
+                                <span class="badge">Food</span>
+                                <p class="date">2025-10-18</p>
+                            </div>
+                            <span class="amount-secondary">₹220</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card demo-card">
+                    <h3>Category breakdown</h3>
+                    <div class="chart-visual">
+                        <div class="pie-chart">
+                            <div class="slice slice-1" style="--start: 0; --end: 66.7;">
+                                <span>Housing 66%</span>
+                            </div>
+                            <div class="slice slice-2" style="--start: 66.7; --end: 83.3;">
+                                <span>Savings 17%</span>
+                            </div>
+                            <div class="slice slice-3" style="--start: 83.3; --end: 96.4;">
+                                <span>Shopping 13%</span>
+                            </div>
+                            <div class="slice slice-4" style="--start: 96.4; --end: 100;">
+                                <span>Food 4%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #FF6B6B;"></span>
+                            <span>Housing ₹12,000</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #00C48C;"></span>
+                            <span>Savings ₹3,000</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #0066FF;"></span>
+                            <span>Shopping ₹2,350</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #FF9800;"></span>
+                            <span>Food ₹640</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #9C27B0;"></span>
+                            <span>Travel ₹180</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card demo-card">
+                    <h3>Budget vs Spend</h3>
+                    <div class="budget-bars">
+                        <div class="budget-item">
+                            <div class="budget-header">
+                                <span>Food</span>
+                                <span>₹640 / ₹1,500</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 43%;"></div>
+                            </div>
+                        </div>
+                        <div class="budget-item">
+                            <div class="budget-header">
+                                <span>Shopping</span>
+                                <span>₹2,350 / ₹3,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%;"></div>
+                            </div>
+                        </div>
+                        <div class="budget-item">
+                            <div class="budget-header">
+                                <span>Travel</span>
+                                <span>₹180 / ₹1,000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 18%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card demo-card">
+                    <h3>Monthly spending trend</h3>
+                    <div class="chart-visual">
+                        <div class="line-chart">
+                            <div class="chart-bar" style="height: 60%;"><span>₹15,200</span></div>
+                            <div class="chart-bar" style="height: 80%;"><span>₹17,800</span></div>
+                            <div class="chart-bar" style="height: 70%;"><span>₹16,500</span></div>
+                            <div class="chart-bar" style="height: 90%;"><span>₹19,200</span></div>
+                            <div class="chart-bar" style="height: 75%;"><span>₹18,100</span></div>
+                            <div class="chart-bar" style="height: 76%;"><span>₹18,170</span></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                            <span>Aug</span>
+                            <span>Sep</span>
+                            <span>Oct</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-note">
+                <p>💡 <strong>Pro tip:</strong> This is just a preview — the real app has even more insights!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-subtitle">Start free, upgrade when you're ready</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="card pricing-card">
+                    <h3>Freemium</h3>
+                    <div class="price">
+                        <span class="price-amount">Free</span>
+                        <span class="price-period">/ forever</span>
+                    </div>
+                    <p class="pricing-desc">Perfect for getting started with expense tracking</p>
+                    <a href="#modal" class="btn btn-outline btn-block">Get started</a>
+                    <ul class="features-list">
+                        <li>✓ Basic tracking</li>
+                        <li>✓ 3 custom budgets</li>
+                        <li>✓ Monthly reports</li>
+                        <li>✓ SMS transaction import</li>
+                        <li>✓ Standard categorization</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                </div>
+
+                <div class="card pricing-card pricing-card-popular">
+                    <div class="popular-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                        Most Popular
+                    </div>
+                    <h3>Premium</h3>
+                    <div class="price">
+                        <span class="price-amount">₹149</span>
+                        <span class="price-period">/ per month</span>
+                    </div>
+                    <p class="pricing-desc">For power users who want complete financial control</p>
+                    <a href="#modal" class="btn btn-primary btn-block">Try Premium free for 14 days</a>
+                    <ul class="features-list">
+                        <li>✓ Everything in Free</li>
+                        <li>✓ Unlimited budgets</li>
+                        <li>✓ Advanced insights & analytics</li>
+                        <li>✓ Spending forecasting</li>
+                        <li>✓ Goal-based savings tracker</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Export to Excel/PDF</li>
+                        <li>✓ Custom categories</li>
+                    </ul>
+                    <div class="pricing-note">
+                        <p>No credit card required for trial</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card pricing-info">
+                <h4>💳 Payment & Safety</h4>
+                <ul>
+                    <li>• Premium subscriptions are processed through Google Play Store or Stripe</li>
+                    <li>• We never store your payment details</li>
+                    <li>• Cancel anytime, no questions asked</li>
+                    <li>• 14-day money-back guarantee</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Security -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="trust-badge">🔒 Your security is our priority</div>
+                <h2 class="section-title">Bank-level security & privacy</h2>
+                <p class="section-subtitle">We take your financial data seriously. Here's how we keep it safe.</p>
+            </div>
+
+            <div class="security-grid">
+                <div class="card security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00C48C" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Read-only access</h3>
+                    <p>We NEVER ask for your UPI PIN, MPIN, or bank passwords. All transaction data is read-only.</p>
+                </div>
+
+                <div class="card security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00C48C" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>AES-256 encryption</h3>
+                    <p>Your data is encrypted using bank-grade security standards, both in transit and at rest.</p>
+                </div>
+
+                <div class="card security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00C48C" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Privacy-first design</h3>
+                    <p>Your financial data stays on your device. We never sell your information to third parties.</p>
+                </div>
+
+                <div class="card security-card">
+                    <div class="security-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00C48C" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3>Indian data localization</h3>
+                    <p>All data is stored within India, complying with local regulations and GDPR standards.</p>
+                </div>
+            </div>
+
+            <div class="card trust-explanation">
+                <h3>How SmartSpend accesses your data</h3>
+                <p><strong>We do NOT store UPI credentials.</strong> SmartSpend reads transaction notifications from your device (locally) or uses secure read-only integrations with your permission.</p>
+                <p>When you connect a UPI app or enable SMS parsing, we only access transaction history — amounts, merchants, dates, and categories. We <strong>never</strong> have access to make payments or transfer money on your behalf.</p>
+                <p>All data processing happens on your device first. Only anonymized insights are synced to cloud (if you enable Premium features), and you can export or delete your data anytime.</p>
+            </div>
+
+            <div class="security-badges">
+                <span class="badge-outline">🔐 AES-256 Encryption</span>
+                <span class="badge-outline">✓ GDPR Ready</span>
+                <span class="badge-outline">🇮🇳 Indian Data Localization</span>
+                <span class="badge-outline">🛡️ PCI DSS Aware</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently asked questions</h2>
+                <p class="section-subtitle">Got questions? We've got answers.</p>
+            </div>
+
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>Is SmartSpend really free?</summary>
+                    <p>Yes! Our Freemium plan is completely free forever with basic tracking, 3 budgets, and monthly reports. Premium features cost ₹149/month with a 14-day free trial.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How does SmartSpend access my UPI transactions?</summary>
+                    <p>SmartSpend reads transaction notifications from your device locally or through secure read-only UPI integrations. We never access your UPI PIN, bank passwords, or the ability to make payments.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Which UPI apps are supported?</summary>
+                    <p>We support all major UPI apps including Google Pay, PhonePe, Paytm, BHIM, and more. You can also enable SMS parsing as an alternative.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I use SmartSpend without connecting my UPI account?</summary>
+                    <p>Absolutely! You can manually enter transactions or just enable SMS parsing. The choice is yours.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What happens to my data if I stop using SmartSpend?</summary>
+                    <p>You own your data. You can export everything to Excel/CSV and delete your account anytime. We'll permanently remove all your data within 30 days of account deletion.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Does SmartSpend work offline?</summary>
+                    <p>Yes! The core features work offline. Cloud sync and advanced insights require internet connection (Premium feature).</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How accurate is the auto-categorization?</summary>
+                    <p>Our AI categorization is 90%+ accurate and improves over time as you use the app. You can always edit categories manually.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I share access with family members?</summary>
+                    <p>Currently, each account is individual. Family sharing features are coming soon in a future update!</p>
+                </details>
+            </div>
+
+            <div class="faq-cta">
+                <p>Still have questions?</p>
+                <p class="muted">Our support team is here to help you get the most out of SmartSpend.</p>
+                <a href="mailto:support@smartspend.app" class="link-primary">Contact support →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="gradient-text">SmartSpend</h3>
+                    <p>Effortless UPI expense tracking that helps you save.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:hello@smartspend.app" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#">Roadmap</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Data Security</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="mailto:support@smartspend.app">Contact Support</a>
+                    <a href="#">Report Bug</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 SmartSpend. All rights reserved. Made with ❤️ in India.</p>
+                <p>🔒 Your data is secure and never shared with third parties.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal (CSS-only) -->
+    <div class="modal" id="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <a href="#" class="modal-close">×</a>
+            <h2>Choose how to connect</h2>
+            <p class="modal-subtitle">SmartSpend needs read-only access to track your transactions automatically</p>
+            
+            <div class="modal-options">
+                <label class="modal-option">
+                    <input type="radio" name="connect-method" value="upi">
+                    <div class="option-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                        <h3>UPI App Integration</h3>
+                        <p>Connect Google Pay, PhonePe, Paytm, or BHIM directly</p>
+                        <span class="badge-small">Recommended</span>
+                    </div>
+                </label>
+
+                <label class="modal-option">
+                    <input type="radio" name="connect-method" value="sms">
+                    <div class="option-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <h3>SMS Parsing</h3>
+                        <p>Read transaction SMS from your bank and UPI apps</p>
+                        <span class="badge-small">Local only</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="modal-security">
+                <p><strong>🔒 Important:</strong> SmartSpend <strong>never asks for your UPI PIN, MPIN, or bank passwords</strong>. We only read transaction notifications — we cannot make payments or transfer money.</p>
+            </div>
+
+            <a href="#" class="btn btn-primary btn-block">Continue</a>
+        </div>
+    </div>
+</body>
+</html>
